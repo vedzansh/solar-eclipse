@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Eclipse</title>
+    <style>
+        @keyframes eclipse {
+            0% {
+                margin-left: 200px;
+            }
+            50% {
+                margin-left: 0px;
+            }
+            100% {
+                margin-right: 200px;
+            }   
+        }
+        html {
+            background-color: #28042e;
+            place-content: center;
+            justify-content: center;
+        }
+
+        #sun {
+            height: 150px;
+            width: 150px;
+            border-radius: 100%;
+            margin-top: 70px;
+            padding-top: 6px;
+            padding-left: 3px;
+            padding-right: 3px;
+            background-color: #ff9040;
+            box-shadow: 0 0 100px #ff4500;
+        }
+        #moon {
+            height: 145px;
+            width: 145px;
+            border-radius: 100%;
+            background-color: black;
+            margin-left: -200px;
+            box-shadow: 0 0 200px rgb(13, 0, 0);
+            animation: eclipse 4s infinite alternate;
+    
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <div id="sun">
+            <div id="moon"> </div>
+        </div>
+    </center>
+</body>
+</html>
